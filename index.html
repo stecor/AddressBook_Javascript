@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- Author : Stefano Corra https://www.linkedin.com/in/stefanocorra/-->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author: Stefano Corra" content="JavaScript App">
+  <meta name="description" content="Address Book App">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <form>
+    <h2>Address Book</h2>
+
+    First Name: <input type="text" name ="name" id ="name"/> &nbsp
+    Last Name: <input type="text" name ="lastname" id ="lastname"/> &nbsp
+    Telephone: <input type="text" name ="phone" id="phone"/> &nbsp
+    Email: <input type="text" name ="email" id="email"/> &nbsp
+    <button type="button" onclick="myAdd()">Add</button>
+    <br/><br/>
+    List  : &nbsp
+      <select id="myList" name="list[]" size="4" style="width: 400px;" multiple>
+
+      </select>
+    <br/><br/>
+    <button type="button" name="delete" onclick="myDelete()">Delete</button>
+    <button type="button" name="sortname" onclick="mySortName()">Sort Name</button>
+    <button type="button" name="sortlastname" onclick="mySortLastName()">Sort Lastname</button>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
